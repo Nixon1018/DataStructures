@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-class flexible {
+class Flexible {
     int[] arr;
     int size = 0;
     private static final Logger logger = Logger.getLogger("InfoLogging");
@@ -58,13 +58,12 @@ class flexible {
         }
     }
 }
-public class array {
+public class Array {
     private static final Logger logger = Logger.getLogger("InfoLogging");
     public static void main(String[] args) {
-     int[] arr;
      int check=1;
      Scanner sc= new Scanner(System.in);
-     flexible f=new flexible();
+     Flexible f=new Flexible();
      while(check==1) {
          logger.info("1.add 2.remove 3.print 4.exit");
          int chose=sc.nextInt();

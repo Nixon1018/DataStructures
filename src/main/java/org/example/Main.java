@@ -2,26 +2,26 @@ package org.example;
 import java.util.*;
 import java.util.logging.Logger;
 
-class node
+class Node
 {
     int data;
-    node nextnode;
-    node(int data)
+    Node nextnode;
+    Node(int data)
     {
         this.data=data;
     }
 
 }
-class list {
-    node head = null;
-    node current = null;
-    node prev = null;
+class List {
+    Node head = null;
+    Node current = null;
+    Node prev = null;
     int size=0;
     int count=0;
     private static final Logger logger = Logger.getLogger("InfoLogging");
 
     void insert(int data) {
-        node newnode = new node(data);
+        Node newnode = new Node(data);
         if (this.head == null) {
             this.head = newnode;
         } else {
@@ -35,7 +35,7 @@ class list {
     }
     void insertat(int data,int index)
     {
-        node newnode = new node(data);
+        Node newnode = new Node(data);
         if(index==0) {
             if (this.head == null) {
                 this.head = newnode;
@@ -63,7 +63,7 @@ class list {
 
     void remove() {
         if (this.head == null) {
-            logger.info("The list is empty");
+            logger.info("The list  empty");
         } else {
             this.current = head;
             while (this.current.nextnode != null) {
@@ -78,7 +78,7 @@ class list {
     {
 
         if (this.head == null) {
-            logger.info("The list is empty");
+            logger.info("The list  empty");
         }else{
             this.current=head;
             while(this.count!=index)
@@ -127,7 +127,7 @@ public class Main {
     private static final Logger logger = Logger.getLogger("InfoLogging");
 
     public static void main(String[] args) {
-        list l = new list();
+        List l = new List();
         Scanner sc= new Scanner(System.in);
         int check = 1;
 
