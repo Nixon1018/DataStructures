@@ -94,24 +94,7 @@ class List {
 
         }
     }
-    void removedata(int data)
-    {
 
-        if (this.head == null) {
-            logger.info("The list is empty");
-        }else{
-            this.current=head;
-            while(this.current.data!=data)
-            {
-                if(current.nextnode!=null) {
-                    prev=current;
-                    this.current = current.nextnode;
-                }
-            }
-            prev.nextnode=current.nextnode;
-
-        }
-    }
     void print()
     {
         this.current=head;
@@ -153,7 +136,7 @@ public class Main {
                 }
             }
             else if(enter==2) {
-                logger.info("1.remove the element at end 2. remove the element at index 3.remove the same  element");
+                logger.info("1.remove the element at end 2. remove the element at index ");
                 int out = sc.nextInt();
                 if(out==1) {
                     l.remove();
@@ -163,12 +146,6 @@ public class Main {
                     logger.info("Enter the index");
                     int indexx=sc.nextInt();
                     l.removeat(indexx);
-                }
-                else if(out==3)
-                {
-                    logger.info("Enter the data");
-                    int dataa=sc.nextInt();
-                    l.removedata(dataa);
                 }
             }
             else if(enter==3)
