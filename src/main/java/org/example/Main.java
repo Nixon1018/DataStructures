@@ -152,7 +152,7 @@ public class Main {
 
                 }
             }
-            if(enter==2) {
+            else if(enter==2) {
                 logger.info("1.remove the element at end 2. remove the element at index 3.remove the same  element");
                 int out = sc.nextInt();
                 if(out==1) {
@@ -171,11 +171,11 @@ public class Main {
                     l.removedata(dataa);
                 }
             }
-            if(enter==3)
+            else if(enter==3)
             {
                 l.print();
             }
-            if(enter==4)
+            else if(enter==4)
             {
                 check=0;
             }
