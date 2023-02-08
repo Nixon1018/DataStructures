@@ -4,8 +4,8 @@ class Stack{
         this.size = 0
     }
     add(element){
-        var node = new Node(element)
-        var current
+        let node = new Node(element)
+        let current
         if(this.head == null){
             this.head = node
         }
@@ -19,8 +19,8 @@ class Stack{
         this.size++
     }
     remove(){
-        var current
-        var previous
+        let current
+        let previous
         if(this.head == null){
             console.log("Stack Empty")
         }
@@ -35,7 +35,7 @@ class Stack{
         this.size--
     }
     printStack(){
-        var current
+        let current
         if(this.head!=null){
             current = this.head
             while(current){
@@ -50,7 +50,7 @@ class Stack{
 
 }
 console.log("Stack:")
-var s = new Stack()
+let s = new Stack()
 s.add(7)
 s.add(8)
 s.add(9)
