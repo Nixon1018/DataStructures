@@ -4,8 +4,8 @@ class Queue{
         this.size = 0
     }
     add(element){
-        var node = new Node(element)
-        var current
+        let node = new Node(element)
+        let current
         if(this.head == null){
             this.head = node
         }
@@ -31,7 +31,7 @@ class Queue{
         }
     }
     printQueue(){
-        var current
+        let current
         if(this.head!=null){
             current = this.head
             while(current){
@@ -46,7 +46,7 @@ class Queue{
 }
 
 console.log("Queue:")
-var q = new Queue()
+let q = new Queue()
 q.add(10)
 q.add(11)
 q.add(12)
