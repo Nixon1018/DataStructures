@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-class Flexible {
+ public class Flexible {
     int[] arr;
     int size = 0;
     private static final Logger logger = Logger.getLogger("InfoLogging");
