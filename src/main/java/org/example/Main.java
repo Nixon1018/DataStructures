@@ -2,16 +2,7 @@ package org.example;
 import java.util.*;
 import java.util.logging.Logger;
 
-class Node
-{
-    int data;
-    Node nextnode;
-    Node(int data)
-    {
-        this.data=data;
-    }
 
-}
 class List {
     Node head = null;
     Node current = null;
